@@ -1,0 +1,76 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "My Home Work";
+}
+
+<div class="space-y-20 p-10">
+
+    <!-- 1 -->
+    <section class="min-h-screen flex items-center justify-center">
+        <div class="flex justify-between w-1/2">
+            <button class="p-4 bg-green-500 text-white hover:bg-green-700">Кнопка 1</button>
+            <button class="p-4 bg-green-500 text-white hover:bg-green-700">Кнопка 2</button>
+            <button class="p-4 bg-green-500 text-white hover:bg-green-700">Кнопка 3</button>
+        </div>
+    </section>
+
+    <!-- 2 -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-4 rounded shadow-lg">Картка 1</div>
+        <div class="bg-white p-4 rounded shadow-lg">Картка 2</div>
+        <div class="bg-white p-4 rounded shadow-lg">Картка 3</div>
+        <div class="bg-white p-4 rounded shadow-lg">Картка 4</div>
+    </section>
+
+    <!-- 3 -->
+    <section class="max-w-md mx-auto bg-white p-6 rounded shadow-lg">
+        <h2 class="text-xl font-bold mb-4">Login</h2>
+        <form class="space-y-4">
+            <input type="email" placeholder="Email"
+                   class="w-full py-2 px-4 border-2 border-gray-300 rounded focus:ring-2 focus:ring-blue-500" />
+            <input type="password" placeholder="Password"
+                   class="w-full py-2 px-4 border-2 border-gray-300 rounded focus:ring-2 focus:ring-blue-500" />
+            <button type="submit"
+                    class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-700 transition duration-300">
+                Login
+            </button>
+        </form>
+    </section>
+
+    <!-- 4 -->
+    <section class="text-center space-y-6">
+        <div class="inline-block p-6 bg-yellow-200 rounded-lg transform transition duration-300 hover:scale-110 hover:rotate-5">
+            Наведи на мене 🌀
+        </div>
+        <br />
+        <button class="bg-red-500 text-white px-4 py-2 rounded animate-pulse">Pulse</button>
+    </section>
+
+    <!-- 5 -->
+    <section class="text-center space-y-10">
+        <div>
+            <h1 class="text-3xl font-bold">Welcome to Landing Page</h1>
+            <p class="text-gray-600">This is the starting side Tailwind</p>
+            <button class="mt-4 px-6 py-3 bg-indigo-500 text-white rounded hover:bg-indigo-700 transition duration-300">
+                Call to Action
+            </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-4 rounded shadow-lg">
+                <img src="https://occ-0-8407-114.1.nflxso.net/dnm/api/v6/Z-WHgqd_TeJxSuha8aZ5WpyLcX8/AAAABfCMTSwJB0CozlvAYJD_wJlhq5g2tLWtxzANWsigS1cFJjHm2LsvU3L9Qa0mDHjLnTTMNpi-N3eGO-a5iUMOWI3vn0CXH6XVFSUz.jpg?r=bc0" alt="img1" class="mb-2 rounded" />
+                <p>Picture 1</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow-lg">
+                <img src="https://itvdn.com/Content/img/specialities/index/header-illustration.png" alt="img2" class="mb-2 rounded" />
+                <p>Picture 2</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow-lg">
+                <img src="https://lemon.school/storage/2023/07/kakoe-napravlenie-v-it-vybrat-17.gif" alt="img3" class="mb-2 rounded" />
+                <p>Picture 3</p>
+            </div>
+        </div>
+    </section>
+
+</div>
